@@ -5,26 +5,14 @@
 # https://cloudinit.readthedocs.io/
 # https://netplan.io/reference
 #
-# Some additional examples are commented out below
 
 version: 2
-ethernets:
-  eth0:
-    dhcp4: true
-    optional: true
+renderer: networkd
 wifis:
   wlan0:
     dhcp4: true
+    dhcp6: true
     optional: true
     access-points:
-      <myhomewifi>:
-        password: "<wifi-password>"
-#      myworkwifi:
-#        password: "correct battery horse staple"
-#      workssid:
-#        auth:
-#          key-management: eap
-#          method: peap
-#          identity: "me@example.com"
-#          password: "passw0rd"
-#          ca-certificate: /etc/my_ca.pem
+      "SSID":
+         password: "PassPhrase"
