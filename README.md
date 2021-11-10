@@ -1,2 +1,23 @@
 # rpi4-ubuntu-server
-Initialize a new Raspberry Pi 4 to run Ubuntu Server 20.04 LTS (64-bit)
+Initialize a Raspberry Pi 4 to run Ubuntu Server 20.04 LTS (64-bit)
+
+Image and config:
+  rpi-imager write Ubuntu 20.04.3 (64-bit) to SD card (DO NOT use custome settings via Ctrl+Shift+X)
+  Copy (overwrite) network-config to SD image
+  Copy (overwrite) user-data to SD image
+  Insert SD and boot RPi4
+
+After first boot and restart:
+
+  (With display attached):
+  Login using ubuntu:ubuntu and change root password
+  sudo apt update
+  sudo apt upgrade
+  reboot
+
+  (Headless):
+  To do...
+
+More To Do:
+  Add users
+  Add firewall
