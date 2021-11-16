@@ -19,5 +19,8 @@ Initialize a Raspberry Pi 4 to run Ubuntu Server 20.04 LTS (64-bit)
 
 More To Do:
   - [ ] Add headless config
+  - [ ] Set static IP
+  - [ ] ssh key-based authentication
   - [ ] Add users
   - [ ] Add firewall
+  - [ ] Open port to internet
