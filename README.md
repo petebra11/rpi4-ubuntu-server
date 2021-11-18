@@ -11,9 +11,15 @@ Initialize a Raspberry Pi 4 to run Ubuntu Server 20.04 LTS (64-bit)
 
   #### (With display attached):
   - Login using ubuntu:ubuntu and change root password
-  - sudo apt update
-  - sudo apt upgrade
+  - Run command sudo apt update
+  - Run command sudo apt upgrade
   - reboot
+ ##### Add groups and users
+  (It is best practice to use users and groups to be able to track who does what, and restrict who does what, respectively. Logging in as root is ill advised for many more reasons.)
+  - Run command sudo addgroup <groupname>
+    - To delete a group, run command sudo delgroup groupname
+  - Run command sudo adduser <username>
+    - To delete a user, run command sudo deluser <username>
 
   #### Headless:
 
